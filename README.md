@@ -1,31 +1,30 @@
-# D-FiCracker
+# D_FiCracker
 
-A beginner-friendly Wi-Fi handshake capture and cracker tool made for Kali Linux.
+A bad but working WiFi handshake catcher and cracker — made by Dilshuppa.
 
-**👨‍💻 Developed by:** Dilshuppa  
-**🎯 Purpose:** For ethical hacking practice, student learning, and pentesting on authorized networks only.
-
----
-
-## 📦 Features
-
-- Lists available wireless adapters
-- Lets you pick a target Wi-Fi network
-- Captures WPA handshake using `airodump-ng` & `aireplay-ng`
-- Cracks the password using `aircrack-ng` with a wordlist
+⚠️ For learning only. Don’t be dumb and use it on random networks.
 
 ---
 
-## 🧪 Requirements
+## 💻 What it does:
 
-- Kali Linux
-- Wireless adapter that supports monitor mode
-- Run the tool as `sudo`
-- `aircrack-ng` installed (comes with Kali)
+- Finds your WiFi card
+- Starts monitor mode
+- Scans for networks
+- Captures handshake from a WiFi target
+- Tries to crack it with a wordlist
 
 ---
 
-## 🚀 Usage
+## 🧰 Needs:
+
+- Python 3
+- `airmon-ng`, `airodump-ng`, `aireplay-ng`, `aircrack-ng`
+- RockYou wordlist (`/usr/share/wordlists/rockyou.txt`)
+
+---
+
+## 🚀 How to run:
 
 ```bash
 sudo python3 D-FiCracker.py
